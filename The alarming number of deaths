@@ -1,0 +1,18 @@
+2. The alarming number of deaths
+The table above shows the number of women giving birth at the two clinics at the Vienna General Hospital for the years 1841 to 1846. You'll notice that giving birth was very dangerous; an alarming number of women died as the result of childbirth, most of them from childbed fever.
+
+We see this more clearly if we look at the proportion of deaths out of the number of women giving birth. Let's zoom in on the proportion of deaths at Clinic 1.
+
+# Calculate proportion of deaths per no. births
+# ... YOUR CODE FOR TASK 2 ...
+yearly["proportion_deaths"] = yearly ['deaths'] / yearly['births']
+# Extract Clinic 1 data into clinic_1 and Clinic 2 data into clinic_2
+yearly1 = yearly[yearly['clinic']=='clicic 1']
+yearly2 = yearly[yearly['clinic']=='clicic 2']
+​
+# Print out clinic_1
+print (yearly1)
+# ... YOUR CODE FOR TASK 2 ...
+Empty DataFrame
+Columns: [year, births, deaths, clinic, proportion_deaths]
+Index: []
